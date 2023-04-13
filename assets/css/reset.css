@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{ margin:0; padding:0; }
+
+/* a 링크 초기화 */
+a { color: #333; text-decoration: none; }
+a:hover { color: #da291c; }
+
+/* 폰트 초기화 */
+body,input,textarea,select,button,table { font-family:'Noto Sans KR', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #333; font-size: 13px; line-height: 1.5; }
+
+/* 폰트 스타일 초기화 */
+em,address { font-style: normal; }
+
+/* 블릿기호 초기화 */
+ul,li,ol { list-style: none; }
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 { font-size: 13px; font-weight: normal; }
+
+/* 테두리 초기화 */
+img,fieldset { border:0 none; }
+
+/* 버튼 초기화 */
+button { border: 0; }
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+    display: block; 
+    content: '';
+    line-height: 0;
+}
+.clearfix:after { clear: both; }
+
+/* IR 효과 */
+.ir_pm { display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px; }
+.ir_wa { display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%; }
+.ir_so { overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px; }
+
+/* 디자인 초기화 */
+select {
+    min-width: 70px;
+    height: 40px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    background-image: url('../img/select_arrow_icon.png');
+    background-size: 15px auto;
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    appearance:none;
+    vertical-align: middle;
+}
+
+/* 반응형 */
+.container:not(#nav .container) {
+    position: relative; 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container2 {
+    position: relative; 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+/* 색상 */
+:root{
+	--body-color: #222;
+	--hover-color: #000000;
+	--footer-color: #888888;
+
+	--primary-color: #F04130;
+	--secondary-color: #000;
+	--third-color: #da291c;
+	--fourth-color: #2752A0;
+	--fifth-color: #fff;
+}
